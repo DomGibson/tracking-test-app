@@ -1,5 +1,12 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+    gtmId: 'GTM-TP93C6F'
+}
+ 
+TagManager.initialize(tagManagerArgs)
 
 function Blog() {
   return (

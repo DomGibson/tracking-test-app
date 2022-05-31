@@ -1,5 +1,12 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router";
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+    gtmId: 'GTM-TP93C6F'
+}
+ 
+TagManager.initialize(tagManagerArgs)
 
 function Post() {
   let { postSlug } = useParams();
